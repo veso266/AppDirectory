@@ -2,7 +2,7 @@
 require_once ('zend/vendor/autoload.php');
 require_once ('classes/AppDirectory.php');
 
-$serverUrl = "http://appdirectory.messenger.msn.com/AppDirectory/helloWorld/server.php";
+$serverUrl = "http://appdirectory.messenger.msn.com/AppDirectory/AppDirectory.php";
 $options = [
     'uri' => $serverUrl,
 ];
