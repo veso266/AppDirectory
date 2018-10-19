@@ -2,21 +2,6 @@
 require_once ('zend/vendor/autoload.php');
 require_once ('classes/AppDirectory.php');
 
-class Hello
-{
-    /**
-     * Say hello.
-     *
-     * @param string $firstName
-     * @return string $greetings
-     */
-    public function sayHello($firstName)
-    {
-        return 'Hello ' . $firstName;
-    }
-
-}
-
 $serverUrl = "http://appdirectory.messenger.msn.com/AppDirectory/helloWorld/server.php";
 $options = [
     'uri' => $serverUrl,
