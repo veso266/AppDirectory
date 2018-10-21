@@ -19,7 +19,7 @@ if (isset($_GET['wsdl'])) {
     echo $soapAutoDiscover->generate()->toXml();
 } else {
     $soap = new \Zend\Soap\Server($serverUrl . '?wsdl');
-    $soap->setObject(new \Zend\Soap\Server\DocumentLiteralWrapper(new Hello()));
+    $soap->setObject(new \Zend\Soap\Server\DocumentLiteralWrapper(new AppDirectory()));
     $soap->handle();
 }
 ?>
